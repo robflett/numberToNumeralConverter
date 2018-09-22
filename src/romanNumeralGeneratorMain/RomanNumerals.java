@@ -17,7 +17,7 @@ import java.util.TreeMap;
  */
 public class RomanNumerals {
 
-    public static TreeMap map = new TreeMap();
+    public static TreeMap<Integer, String> map = new TreeMap<>();
 
     static {
         map.put(1, "I");
