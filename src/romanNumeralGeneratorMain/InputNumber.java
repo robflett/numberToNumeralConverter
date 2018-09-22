@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * Using Scanner for input as it handles...
+ * Using Scanner for console input as it parses input data
  *
  */
 

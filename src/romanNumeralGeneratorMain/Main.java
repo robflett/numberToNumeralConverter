@@ -1,6 +1,13 @@
 package romanNumeralGeneratorMain;
 
 /**
+ *
+ * Entrypoint for the Program - user can enter numbers between 1 and 3999 or type 0 to exit
+ * If user enters an invalid number then an IllegalArgumentException is thrown
+ *
+ */
+
+/**
  * Created by robflett on 22/09/2018.
  */
 public class Main {
@@ -18,6 +25,7 @@ public class Main {
 
             number = InputNumber.getNumber();
 
+//            Option to exit when the user types '0'
             if (number == 0)
                 break;
             System.out.println(numberToNumeralGenerator.generate(number));
