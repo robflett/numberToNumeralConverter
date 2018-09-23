@@ -1,9 +1,8 @@
-package romanNumeralGeneratorMain;
+package romannumeralgeneratormain;
 
 /**
  * The is the given interface for the Roman Numeral Generator
  * It is implemented by the NumberToNumeralGenerator class - which overrides this classes method
- *
  */
 
 /**

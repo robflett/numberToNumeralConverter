@@ -1,10 +1,8 @@
-package romanNumeralGeneratorMain;
+package romannumeralgeneratormain;
 
 /**
- *
  * Entrypoint for the Program - user can enter numbers between 1 and 3999 or type 0 to exit
  * If user enters an invalid number then an IllegalArgumentException is thrown
- *
  */
 
 /**
@@ -21,6 +19,7 @@ public class Main {
 
         int number = 0;
         do {
+//            System.out could be replaced by a logger in a future version
             System.out.print(INSTRUCTIONS);
 
             number = InputNumber.getNumber();
@@ -37,4 +36,4 @@ public class Main {
 
 }
 
-// When over 3999 is added the IllegalArgumentException kicks in - add further instructions
+// When over 3999 is added the IllegalArgumentException is thrown

@@ -1,4 +1,4 @@
-package romanNumeralGeneratorMain;
+package romannumeralgeneratormain;
 
 import java.util.Scanner;
 

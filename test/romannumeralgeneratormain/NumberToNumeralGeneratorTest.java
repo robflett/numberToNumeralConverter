@@ -1,7 +1,5 @@
-package romanNumeralGeneratorMain;
+package romannumeralgeneratormain;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,12 +9,7 @@ import static org.junit.Assert.*;
  */
 public class NumberToNumeralGeneratorTest {
 
-    @BeforeClass
-    public static void setUp(){
-    }
-
-
-//    Test to check if simple numbers - contained in the RomanNumerals.java class - return as expected
+    //    Test to check if simple numbers - contained in the RomanNumerals.java class - return as expected
     @Test
     public void testReturningExpectedSimpleNumbers() {
 
@@ -29,14 +22,14 @@ public class NumberToNumeralGeneratorTest {
         assertEquals("Test to return expected number:", "IV", four);
 
         String fifty = numberToNumeralGenerator.generate(50);
-        assertEquals("Test to return expected number:","L", fifty);
+        assertEquals("Test to return expected number:", "L", fifty);
 
         String nineHundred = numberToNumeralGenerator.generate(900);
-        assertEquals("Test to return expected number:","CM", nineHundred);
+        assertEquals("Test to return expected number:", "CM", nineHundred);
 
     }
 
-//    Test to check if combined numbers are returning as expected
+    //    Test to check if combined numbers are returning as expected
     @Test
     public void testReturningExpectedCombinedNumbers() {
 
@@ -49,15 +42,15 @@ public class NumberToNumeralGeneratorTest {
         assertEquals("Test to return expected number:", "XLII", fourtyTwo);
 
         String threeHundredAndFour = numberToNumeralGenerator.generate(304);
-        assertEquals("Test to return expected number:","CCCIV", threeHundredAndFour);
+        assertEquals("Test to return expected number:", "CCCIV", threeHundredAndFour);
 
         String oneThousandNineHundredAndTwelve = numberToNumeralGenerator.generate(1912);
-        assertEquals("Test to return expected number:","MCMXII", oneThousandNineHundredAndTwelve);
+        assertEquals("Test to return expected number:", "MCMXII", oneThousandNineHundredAndTwelve);
 
     }
 
-//    Test to confirm that Exception is returned when number is below one
-    @Test (expected = IllegalArgumentException.class)
+    //    Test to confirm that Exception is returned when number is below one
+    @Test(expected = IllegalArgumentException.class)
     public void testReturningErrorMessageWhenNumberIsBelowOne() {
 
         NumberToNumeralGenerator numberToNumeralGenerator = new NumberToNumeralGenerator();
@@ -66,8 +59,8 @@ public class NumberToNumeralGeneratorTest {
 
     }
 
-//    Test to confirm that Exception is returned when number is above 3999
-    @Test (expected = IllegalArgumentException.class)
+    //    Test to confirm that Exception is returned when number is above 3999
+    @Test(expected = IllegalArgumentException.class)
     public void testReturningErrorMessageWhenNumberIsAbove3999() {
 
         NumberToNumeralGenerator numberToNumeralGenerator = new NumberToNumeralGenerator();
@@ -77,8 +70,8 @@ public class NumberToNumeralGeneratorTest {
     }
 
 
-//    Test to confirm that Exception is returned when number is far above 3999
-    @Test (expected = IllegalArgumentException.class)
+    //    Test to confirm that Exception is returned when number is far above 3999
+    @Test(expected = IllegalArgumentException.class)
     public void testReturningErrorMessageWhenNumberIsFarAbove3999() {
 
         NumberToNumeralGenerator numberToNumeralGenerator = new NumberToNumeralGenerator();
